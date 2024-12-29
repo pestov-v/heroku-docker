@@ -1,0 +1,10 @@
+build:
+  docker:
+    web: Dockerfile
+
+release:
+  command:
+    - ./release-tasks.sh
+
+run:
+  web: node src/server.js
